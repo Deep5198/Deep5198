@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="593.0" prefWidth="660.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="highwaymonitor.HighwayController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <AnchorPane layoutX="-6.0" layoutY="1.0" onMouseClicked="#exit" prefHeight="593.0" prefWidth="669.0" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="-6.0" AnchorPane.rightAnchor="-3.0" AnchorPane.topAnchor="1.0">
+         <children>
+            <!--<Button fx:id="exitButton" layoutX="291.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#exit" prefHeight="25.0" prefWidth="113.0" text="Exit" />-->
+            <AnchorPane layoutX="26.0" layoutY="77.0" prefHeight="490.0" prefWidth="619.0" style="-fx-border-color: Black;" AnchorPane.bottomAnchor="26.0" AnchorPane.leftAnchor="26.0" AnchorPane.rightAnchor="24.0" AnchorPane.topAnchor="77.0">
+               <children>
+                  <ListView fx:id="TerminalList" layoutX="337.0" layoutY="55.0" prefHeight="300.0" prefWidth="285.0" AnchorPane.rightAnchor="17.0" AnchorPane.topAnchor="54.0" />
+                  <ListView fx:id="VehicalFlowList" layoutX="17.0" layoutY="55.0" prefHeight="300.0" prefWidth="285.0" AnchorPane.leftAnchor="17.0" AnchorPane.topAnchor="55.0" />
+                  <Label layoutX="114.0" layoutY="28.0" text="Vehicle Flow" />
+                  <Label layoutX="440.0" layoutY="20.0" text="Terminal" />
+                  <Label layoutX="17.0" layoutY="376.0" text="ID" />
+                  <Label layoutX="17.0" layoutY="411.0" text="Journey" />
+                  <TextField fx:id="VehicalId" layoutX="85.0" layoutY="372.0" />
+                  <TextField fx:id="VehicleJourney" layoutX="85.0" layoutY="407.0" />
+                  <Label alignment="CENTER_RIGHT" layoutX="319.0" layoutY="376.0" text="Processing" />
+                  <Label alignment="CENTER_RIGHT" layoutX="319.0" layoutY="411.0" text="Vehicals" />
+                  <Label alignment="CENTER_RIGHT" layoutX="319.0" layoutY="442.0" text="Total" />
+                  <TextField fx:id="Processing" layoutX="389.0" layoutY="372.0" />
+                  <TextField fx:id="VehicalTotal" layoutX="389.0" layoutY="407.0" />
+                  <TextField fx:id="TotalToll" layoutX="389.0" layoutY="438.0" />
+               </children>
+            </AnchorPane>
+            <Button layoutX="310.0" layoutY="40.0" mnemonicParsing="false" text="Exit" />
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>
