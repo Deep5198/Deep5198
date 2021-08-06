@@ -15,10 +15,6 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-/**
- *
- * @author Mitesh Panchal
- */
 public class HighwayClassTest {
     
     public HighwayClassTest() {
@@ -40,9 +36,11 @@ public class HighwayClassTest {
     public void tearDown() {
     }
 
-    // TODO add test methods here.
-    // The methods must be annotated with annotation @Test. For example:
-    //
+    /**
+	 * TO DO add test methods here.
+	 *
+	 ** The methods must be annotated with annotation @Test. For example:
+	 */
      @Test
      public void testTotalVehicleInEnterance() {
          Highway h;
